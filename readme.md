@@ -1,6 +1,8 @@
 # GraphQL Mongo Starter 
 This example creates a GraphQL server with: Apollo Server, MongoDB, and TypeScript. 
 
+**See the notes for this project here**: https://github.com/Tech-at-DU/ACS-4330-Query-Languages/blob/master/Lessons/Lesson-graphql-mongo.md
+
 ## MongoDB
 MongoDB is a NoSQL database. You'll need to create an account and setup a database there. 
 

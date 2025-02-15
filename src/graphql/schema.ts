@@ -1,21 +1,19 @@
-export const typeDefs = `
-  type Geo {
-    lat: Float
-    lon: Float
-  }
+import { gql } from "apollo-server";
 
-  type Space {
-    _id: ID!
-    title: String
-    desc: String
-    address: String
-    hours: String
-    geo: Geo
-    images: [String]
-    features: [String]
+export const typeDefs = gql`
+  type Character {
+    id: ID!
+    name: String!
+    initiative: Int
   }
 
   type Query {
-    spaces: [Space!]!
+    characters: [Character!]!
+  }
+
+  type Mutation {
+    createCharacter(name: String!, initiative: Int): Character!
+    updateCharacter(id: ID! name: String, initiative: Int): Character!
+    deleteCharacter(id: ID!): Boolean
   }
 `;
